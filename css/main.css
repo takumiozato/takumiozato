@@ -11,6 +11,12 @@
     padding: 15px 30px;
     box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
+    transition: .5s ease;
+}
+
+.link-btn:hover {
+    color: #fff;
+    background-color: #105170;
 }
 
 /*ヘッダー*/
@@ -169,7 +175,7 @@
 
 .contents-header {
     font-size: 2.3rem;
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
 }
 
 .profile-table {
@@ -221,6 +227,35 @@
 
 .favorite-image {
     width: 100%;
+}
+
+/*Ability*/
+.ability-contents p {
+    margin: 0;
+}
+
+.ability-contents ul {
+    list-style: initial;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+
+.ability-contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.ability-contents:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.ability-contents > .text-wrapper {
+    width: 65%;
+}
+
+.ability-contents > .image-wrapper {
+    width: 30%;
 }
 
 /*フッター*/
