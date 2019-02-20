@@ -1,7 +1,7 @@
 var headerComponent = {
 	template: `
 		<header class="header-area">
-			<h1 class="header-logo"><a href="/takumiozato/">OZATO TAKUMI</a></h1>
+			<h1 class="header-logo"><a href="/takumiozato/">Ozato Takumi</a></h1>
 			<nav class="header-nav">
 				<ul>
 					<li class="header-list"><a href="/takumiozato/profile/" class="header-link">profile</a></li>
