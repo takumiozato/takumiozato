@@ -17,20 +17,22 @@
 	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-	<div id="app">
+	<div id="app" v-cloak>
 		<header-component></header-component>
 		<main>
 			<div>
 				<div class="main-visual top">
-					<div class="main-visual-inner">
-						<p class="lead">人のための、Web制作</p>
-						<p>
-							ブランディング、マーケティング、Webサイト制作を通して、<br>
-							人やモノが本来もっている魅力を上手に表現する。<br>
-							発見されていない魅力を引き出す。<br>
-							良いもの同士を繋げる。
-						</p>
-					</div>
+					<transition name="fadeIn">
+						<div class="main-visual-inner" v-show="isShow">
+							<p class="lead">人のための、Web制作</p>
+							<p>
+								ブランディング、マーケティング、Webサイト制作を通して、<br>
+								人やモノが本来もっている魅力を上手に表現する。<br>
+								発見されていない魅力を引き出す。<br>
+								良いもの同士を繋げる。
+							</p>
+						</div>
+					</transition>
 				</div>
 			</div>
 			<section class="section about">
@@ -141,38 +143,7 @@
 			</section>
 			<pagetop-component></pagetop-component>
 		</main>
-		<footer class="footer">
-			<div class="row footer-inner">
-				<div class="column one-half profile-wrapper">
-					<div class="image-wrapper">
-						<img src="images/profile.jpg" alt="大里　匠" class="profile-icon">
-					</div>
-					<div>
-						<p>大里　匠 / Ozato Takumi</p>
-						<p>Web Developer</p>
-					</div>
-				</div>
-				<div class="column one-half row">
-					<div class="three columns">
-						<p><a href="#" class="footer-link">TOP</a></p>
-					</div>
-					<div class="three columns">
-						<p><a href="#" class="footer-link">PROFILE</a></p>
-					</div>
-					<div class="three columns">
-						<p>SERVICE</p>
-						<ul>
-							<li>企画</li>
-							<li>制作</li>
-							<li>改善</li>
-						</ul>
-					</div>
-					<div class="three columns">
-						<p>WORKS</p>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<footer-component></footer-component>
 	</div>
 	<!-- JavaScript -->
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.min.js"></script>

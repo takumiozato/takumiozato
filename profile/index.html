@@ -17,14 +17,16 @@
 	<link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 <body>
-	<div id="app">
+	<div id="app" v-cloak>
 		<header-component></header-component>
 		<main>
 			<div class="main-visual">
-				<div class="main-visual-inner">
-					<p class="lead">Profile</p>
-					<p>私について</p>
-				</div>
+				<transition name="fadeIn">
+					<div class="main-visual-inner" v-show="isShow">
+						<p class="lead">Profile</p>
+						<p>私について</p>
+					</div>
+				</transition>
 			</div>
 			<section class="section">
 				<div class="section-inner">
@@ -171,6 +173,7 @@
 			</section>
 			<pagetop-component></pagetop-component>
 		</main>
+		<footer-component></footer-component>
 	</div>
 	<!-- JavaScript -->
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.min.js"></script>

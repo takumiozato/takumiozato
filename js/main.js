@@ -10,7 +10,7 @@ var headerComponent = {
 				</ul>
 			</nav>
 		</header>
-	`
+	`,
 }
 
 var pageTopComponent = {
@@ -26,10 +26,53 @@ var pageTopComponent = {
 	},
 }
 
+var footerComponent = {
+	template: `
+		<footer class="footer">
+			<div class="row footer-inner">
+				<div class="column one-half profile-wrapper">
+					<div class="image-wrapper">
+						<img src="/takumiozato/images/profile.jpg" alt="大里　匠" class="profile-icon">
+					</div>
+					<div>
+						<p>大里　匠 / Ozato Takumi</p>
+						<p>Web Developer</p>
+					</div>
+				</div>
+				<div class="column one-half row">
+					<div class="three columns">
+						<p><a href="/takumiozato/profile/" class="footer-link">profile</a></p>
+					</div>
+					<div class="three columns">
+						<p><a href="/takumiozato/profile/" class="footer-link">ability</a></p>
+						<ul>
+							<li>企画</li>
+							<li>制作</li>
+							<li>改善</li>
+						</ul>
+					</div>
+					<div class="three columns">
+						<p>WORKS</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	`
+}
+
 var vm = new Vue({
 	el: '#app',
+	data: function(){
+		return {
+			isShow: false
+		}
+	},
+	mounted: function(){
+		this.isShow = true
+	},
 	components: {
 		'header-component': headerComponent,
 		'pagetop-component': pageTopComponent,
+		'footer-component': footerComponent,
 	}
 })
