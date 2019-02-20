@@ -69,6 +69,7 @@
     padding: 0 8px;
     cursor: pointer;
     display: inline-block;
+    user-select: none;
 }
 
 .menu__line{
@@ -389,6 +390,7 @@
 .fixed-bottom > i {
     font-size: 3rem;
     cursor: pointer;
+    user-select: none;
 }
 
 .fixed-bottom > i:hover {
@@ -415,10 +417,15 @@
 }
 
 @media ( max-width:468px ){
+    .btn-wrapper {
+        padding: 10px 0;
+    }
+
     .header-area {
+        background-color: #fff;
         min-width: initial;
         left: 0;
-        top: 15px;
+        top: 0px;
     }
 
     .main-visual {
@@ -432,6 +439,26 @@
     .section-inner {
         width: 90%;
         min-width: initial;
+    }
+
+    .section.about .column {
+        margin: 0 0 70px 0;
+    }
+
+    .section.about .column:last-of-type {
+        margin: 0;
+    }
+
+    .section.works .column {
+        margin: 0 0 70px 0;
+    }
+
+    .section.works .column:last-of-type {
+        margin: 0;
+    }
+
+    .work-list {
+        margin: 0;
     }
 
     .favorite-contents {
