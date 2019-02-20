@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<!-- FAVICON -->
-	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 <body>
 	<header class="header-area">
@@ -37,10 +37,6 @@
 		<section class="section">
 			<div class="section-inner">
 				<h2 class="section-title">できること</h2>
-				<p>
-					Webサイトの企画/設計、コーディング/プログラミング、分析/改善ができます。<br>
-					これまで、コーポレートサイト、ECサイト、リクルートサイト、登録やログインが必要となる会員サイトや簡易的な社内システム管理画面などを作ってきました。<br>
-					それぞれ目的や表現方法はまったく異なりますが、この３つは欠かせない要素と考えています。</p>
 				<div class="ability-list">
 					<div class="ability-contents">
 						<div class="text-wrapper">
@@ -101,15 +97,21 @@
 		</section>
 		<section class="section skill">
 			<div class="section-inner">
-				<h2 class="section-title">SKILLS</h2>
+				<h2 class="section-title">スキル</h2>
 				<div>
 					<p class="skill-set">HTML / CSS / JavaScript / jQuery / Vue.js / PHP / Wordpress / SQL / Git / Google Analytics / SEO / Writing </p>
 				</div>
 			</div>
 		</section>
 		<div class="fixed-bottom">
-			<i class="material-icons">keyboard_arrow_up</i>
+			<i id="scroll-top" class="material-icons">keyboard_arrow_up</i>
 		</div>
 	</main>
+	<script>
+		document.getElementById('scroll-top').onclick = function(){
+			window.scrollTo({top: 0, behavior: "smooth"});
+			return false;
+		}
+	</script>
 </body>
 </html>
