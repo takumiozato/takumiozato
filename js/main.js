@@ -2,20 +2,35 @@ var headerComponent = {
 	template: `
 		<header class="header-area">
 			<h1 class="header-logo"><a href="/takumiozato/">Ozato Takumi</a></h1>
-			<nav class="header-nav">
-				<ul>
-					<li class="header-list"><a href="/takumiozato/profile/" class="header-link">profile</a></li>
-					<li class="header-list"><a href="/takumiozato/ability/" class="header-link">ability</a></li>
-					<li class="header-list"><a href="/takumiozato/future/" class="header-link">future</a></li>
-				</ul>
-			</nav>
-			<a class="menu-btn">
+			<a class="menu-btn" :class="{ 'active': isActive }" @click="menuActive">
 				<span class="menu__line menu__line--top"></span>
 				<span class="menu__line menu__line--center"></span>
 				<span class="menu__line menu__line--bottom"></span>
 			</a>
+			<transition name="slideIn">
+				<div class="menu-list" v-show="isActive">
+					<div class="menu-list-inner">
+						<ul>
+							<li><a href="/takumiozato/profile/">Profile 私について</a></li>
+							<li><a href="/takumiozato/ability/">Ability できること</a></li>
+							<li><a href="/takumiozato/future/">Furture これからやりたいこと</a></li>
+							<li><a href="/takumiozato/works/">Works 実績一覧</a></li>
+						</ul>
+					</div>
+				</div>
+			</transition>
 		</header>
 	`,
+	data: function(){
+		return {
+			isActive: false
+		}
+	},
+	methods: {
+		menuActive: function(){
+			this.isActive = !this.isActive;
+		}
+	}
 }
 
 var pageTopComponent = {
