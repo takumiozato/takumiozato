@@ -9,6 +9,11 @@ var headerComponent = {
 					<li class="header-list"><a href="/takumiozato/future/" class="header-link">future</a></li>
 				</ul>
 			</nav>
+			<a class="menu-btn">
+				<span class="menu__line menu__line--top"></span>
+				<span class="menu__line menu__line--center"></span>
+				<span class="menu__line menu__line--bottom"></span>
+			</a>
 		</header>
 	`,
 }

@@ -62,6 +62,50 @@
     text-decoration: none;
 }
 
+.menu-btn{
+    height: 50px;
+    width: 40px;
+    position: relative;
+    padding: 0 8px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu__line{
+    background: #127c68;
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition:transform .3s;
+    width: 68%;
+}
+
+.menu__line--top {
+    top: 14px;
+}
+
+.menu__line--center{
+    top: 23px;
+}
+
+.menu__line--bottom{
+    bottom: 15px;
+}
+
+.menu__line--top.active{
+    top: 24px;
+    transform: rotate(45deg);
+}
+
+.menu__line--center.active{
+    transform:scaleX(0);
+}
+
+.menu__line--bottom.active{
+    bottom: 24px;
+    transform: rotate(135deg);
+}
+
 /*メインビジュアル*/
 .main-visual-inner {
     display: table-cell;
