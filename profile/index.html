@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Profile | Ozato Takumi</title>
+	<meta name="description" content="">
+	<meta name="author" content="ozato takumi">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body>
+	<div id="app" v-cloak>
+		<header-component></header-component>
+		<main>
+			<div class="main-visual">
+				<transition name="fadeIn">
+					<div class="main-visual-inner" v-show="isShow">
+						<p class="lead">Profile</p>
+						<p>私について</p>
+					</div>
+				</transition>
+			</div>
+			<section class="section">
+				<div class="section-inner">
+					<h2 class="section-title">経歴</h2>
+					<table class="profile-table">
+						<tr>
+							<th>1992年</th>
+							<td>
+								沖縄県石垣島生まれです。<br>
+								小学生の時に父の仕事の転勤で、宮古島、沖縄本島と引越しを繰り返しました。
+							</td>
+						</tr>
+						<tr>
+							<th>2008年</th>
+							<td>
+								南風原中学校を卒業。<br>
+								中学生時代はバスケットボールと陸上競技（長距離走）に夢中になっていて、わりとアクティブな子どもだったと思います。
+							</td>
+						</tr>
+						<tr>
+							<th>2011年</th>
+							<td>
+								那覇商業高校商業科を卒業。<br>
+								高校時代は部活に入らず、国際通り近辺の居酒屋でアルバイトをしていました。<br>
+								卒業後、すぐに就職するつもりだったのですが、アピールできる能力が全くないことに気づき、IT系の専門学校に進学することを決めました。
+							</td>
+						</tr>
+						<tr>
+							<th>2013年</th>
+							<td>
+								国際電子ビジネス専門学校 情報ラインセンス科 卒業<br>
+								アルバイト、国家試験の勉強、就職活動に取り組みつつ、遊びにも全力で、中身の濃い充実した2年間でした。<br>
+								ここではじめてプログラミングを学び、「身につければ明確にスキルとしてアピールできる」と考え、必死に習得に励みました。
+							</td>
+						</tr>
+						<tr>
+							<th>2013年</th>
+							<td>
+								生産管理システムのソフトウェアメーカーにプログラマーとして新卒入社。<br>
+								全国に事業所があり、沖縄に配属されました。<br>
+								この頃はクライアントと直接話すことはなく、SEがクライアントからヒアリングしてまとめた要件をもとに、プログラムを設計、実装、テストを行うのがメインでした。
+							</td>
+						</tr>
+						<tr>
+							<th>2016年</th>
+							<td>
+								SEとして働くことになり、大阪本社へ異動<br>
+								クライアントから直接話しを聞きながら、業務上の問題点を見つけ出したり、解決方法を考えて、それらをシステムとして落とし込んで設計する業務が主になりました。
+								ディレクション、プロジェクト管理、保守対応がメインになったことで、プログラミングから徐々に離れるようになりました。
+							</td>
+						</tr>
+						<tr>
+							<th>2017年〜現在</th>
+							<td>
+								会社の売っているソフトウェア自体の知識は身についてきたものの、会社を離れるとその知識はほとんど通用しないということに気づき、限定的なスキルや知識ではなく、もっと幅広く応用ができて、多くの人に価値を生む能力を身につけたいと考え、ソフトウェアメーカーを退社し、大阪市内のWeb制作会社へ入社しました。
+								プラットフォームがWebなので、知識が限定的になりにくく、工夫をすれば多くの人に価値を届けることができると考えました。<br>
+								主にWebサイト制作案件のディレクション、コーディング、プログラミング、保守対応を行っています。
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section class="section policy">
+				<div class="section-inner">
+					<h2 class="section-title">大事にしていること</h2>
+					<div class="policy-list">
+						<div class="policy-contents">
+							<h3 class="contents-header">協力する</h3>
+							<p>
+								他者への協力、支援を惜しまない。<br>
+								組織内での個人の成果にこだわらず、チームで大きな成果をあげることを目指す。
+							</p>
+						</div>
+						<div class="policy-contents">
+							<h3 class="contents-header">継続する</h3>
+							<p>
+								明確な目標を立て、達成するために必要なことをコツコツと積み重ねる。<br>
+								本質から外れないようにしつつ、もっと楽な方法を考えたり、無駄なやり方を捨てる工夫も忘れない。
+							</p>
+						</div>
+						<div class="policy-contents">
+							<h3 class="contents-header">仕事を楽しむ</h3>
+							<p>
+								尊敬できる人たちと働ける環境を求め、一緒に働けることを楽しむ。<br>
+								前向きな姿勢を忘れず、楽しむ余裕を持つ。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="section-inner">
+					<h2 class="section-title">好きなもの</h2>
+					<div class="favorite-list">
+						<div class="favorite-contents">
+							<div class="text-wrapper">
+								<h3 class="contents-header">読書</h3>
+								<p>
+									本を読むのが好きです。<br>
+									月に10冊ほど読んでいる時期があったのですが、最近は「量より質」で考えています。<br>
+									読みたい本をリストアップして、それぞれどんなことが書かれている本か、その本を読んで何を学びたいか、などをじっくり考えて、月に1冊だけ本を買って読むようにしています。<br>
+									(小説や軽い読み物は空いた時間や移動中にしょっちゅう読んでいます。)<br>
+								</p>
+							</div>
+							<div class="image-wrapper">
+								<img src="../images/favorite_1.jpg" alt="読書" class="favorite-image">
+								<small>がっつり本を読むときは、筆記用具を用意して、気になった部分はメモ帳に書いて巻末に貼り付けるようにしています。</small>
+							</div>
+						</div>
+						<div class="favorite-contents">
+							<div class="text-wrapper">
+								<h3 class="contents-header">猫</h3>
+								<p>
+									実家で3匹猫を飼ってます。<br>
+									ある日突然、出張から帰ってくるとお家に1匹猫がいました。（弟が拾ってきたようです。）<br>
+									その猫が子どもを生み、そのうちの何匹かは知り合いに譲って、残った猫たちがお家にいます。<br>
+									もともと犬派でしたが、今ではすっかり猫派です。癒されます。
+								</p>
+							</div>
+							<div class="image-wrapper">
+								<img src="../images/favorite_2.jpg" alt="猫" class="favorite-image">
+								<small>たまに実家に帰ると、この子だけが近づいてくれて、他の2匹は僕のことを忘れているのか、怖がって逃げていきます...</small>
+							</div>
+						</div>
+						<div class="favorite-contents">
+							<div class="text-wrapper">
+								<h3 class="contents-header">音楽</h3>
+								<p>
+									音楽を聴くのが好きで、高校生の頃はCDを買いあさっていました。<br>
+									とくにビートルズが大好きです。<br>
+									専門学生時代、お題自由の校内プレゼン大会があり、そこでビートルズの魅力についてプレゼンし、3位入賞しました。<br>
+									（ちなみに1位は自作のアプリケーションについてのプレゼン、2位は国家試験合格までの取り組みについてのプレゼンでした。お題自由とはいえ、学業とまったく関係無いことをプレゼンしたことが、自分でも不思議です。）
+								</p>
+							</div>
+							<div class="image-wrapper">
+								<img src="../images/favorite_3.jpg" alt="ビートルズ" class="favorite-image">
+								<small>音楽そのものだけでなく、些細なアイディアを音楽に発展させたり、既成概念にとらわれず、使う楽器や歌詞、レコーディング方法など、実験的なアプローチを繰り返したクリエイティブな面にも強く魅力を感じます。</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<pagetop-component></pagetop-component>
+		</main>
+		<footer-component></footer-component>
+	</div>
+	<!-- JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Abirity | Ozato Takumi</title>
+	<meta name="description" content="">
+	<meta name="author" content="ozato takumi">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body>
+	<div id="app" v-cloak>
+		<header-component></header-component>
+		<main>
+			<div class="main-visual">
+				<transition name="fadeIn">
+					<div class="main-visual-inner" v-show="isShow">
+						<p class="lead">Ability</p>
+						<p>できること</p>
+					</div>
+				</transition>
+			</div>
+			<section class="section">
+				<div class="section-inner">
+					<h2 class="section-title">できること</h2>
+					<div class="ability-list">
+						<div class="ability-contents">
+							<div class="text-wrapper">
+								<h3 class="contents-header">企画/設計</h3>
+								<p>
+									サイト作りを始める前に、いくつか確認をしながら、アイディアを出していきます。
+								</p>
+								<ul>
+									<li>目的は何か / 目的でないことは何か</li>
+									<li>ターゲットはどんな人か / ターゲットでないのはどんな人か</li>
+									<li>伝えたいメッセージは何か / 伝えたくないメッセージは何か</li>
+								</ul>
+								<p>
+									この段階では、可能な限りクライアントも一緒に、とにかく多くのアイディア、候補を出していきます。<br>
+									目的を明確にすると同時に、目的でないことを明確にするのも重要だと考えています。<br>
+									例えば、高級ブランドのECサイトを設計する際、一般的には「身近さ」「庶民的なイメージ」は目的から外れます。<br>
+									目的でないことがわかっていれば、企画や設計の段階で、迷走したり不要な議論をせず、本質に集中できます。
+								</p>
+							</div>
+							<div class="image-wrapper">
+								<img src="../images/ability_1.jpg" alt="企画/設計" class="favorite-image">
+								<small>本格的なデザインに入る前に、紙に手書きでラフスケッチをしたり、アイディアを書き出してクライアントと共有することが多いです。</small>
+							</div>
+						</div>
+						<div class="ability-contents">
+							<div class="text-wrapper">
+								<h3 class="contents-header">コーディング/プログラミング</h3>
+								<p>
+									目的、ターゲット、イメージをデザイナーに伝え、デザインを作ってもらいます。<br>
+									ページの構成や、ページ遷移の流れ、操作性に問題無いかなどを、デザイナーとしっかり協議していきながらデザインを完成させます。<br>
+									デザインが完成すれば、コーディング、プログラミングを進めていきます。<br>
+									Webサイトは作って終わりではなく、絶え間なく改善を繰り返していくものなので、柔軟かつ堅牢で、メンテナンスがしやすい、誰が見ても意図が伝わるコードを書くことを心がけています。
+								</p>
+							</div>
+							<div class="image-wrapper">
+								<img src="../images/ability_2.jpg" alt="コーディング/プログラミング" class="favorite-image">
+								<small>「DRY原則」を意識しながらコードを書いています。プログラミングの基本でありながら、コーディングにも共通する本質的な原則だと考えています。</small>
+							</div>
+						</div>
+						<div class="ability-contents">
+							<div class="text-wrapper">
+								<h3 class="contents-header">分析/改善</h3>
+								<p>
+									Webサイトが完成し、思わずホッと一息ついてしまいたくなるものですが、クライアントにとってはここからがスタート。<br>
+									絶えず分析を続け、最初に設定した目的を達成できているかを見ていきます。<br>
+									Webサイトを閲覧しているユーザーの頭の中や行動を直接見ることはできないので、様々なツールを使いながら予測、分析、改善していきます。<br>
+									ここでも、クライアントと一緒に問題点や課題を挙げていきます。<br>
+									クライアントと、目的達成を共に目指すチームのような関係を築き、「ベンダー vs クライアント」ではなく、「我々 vs 問題」という視点を持つように意識しています。
+								</p>
+							</div>
+							<div class="image-wrapper">
+								<img src="../images/ability_3.jpg" alt="分析/改善" class="favorite-image">
+								<small>問題点や課題を挙げたり、これから達成したいことを考える時に、マインドマップを使ったり、クライアントと一緒にふせん紙に書いて壁に貼り付けてみたり、カンバン方式でタスクを管理したりなど、色々な方法で改善に取り組んでいます。基本的に「ワイワイ楽しくやる」ということを大事にしています。</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section skill">
+				<div class="section-inner">
+					<h2 class="section-title">スキル</h2>
+					<div>
+						<p class="skill-set">HTML / CSS / JavaScript / jQuery / Vue.js / PHP / Wordpress / SQL / Git / Google Analytics / SEO / Writing </p>
+					</div>
+				</div>
+			</section>
+			<pagetop-component></pagetop-component>
+		</main>
+		<footer-component></footer-component>
+	</div>
+	<!-- JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>
