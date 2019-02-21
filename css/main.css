@@ -146,7 +146,7 @@ body {
 
 .menu-list-inner a {
     font-size: 1.8rem;
-    color: #127c68;
+    color: #353535;
     text-decoration: none;
 }
 
@@ -475,7 +475,7 @@ body {
     opacity: 0;
 }
 
-@media ( max-width:468px ){
+@media ( max-width:768px ){
     .main-visual-wrapper {
         background: linear-gradient(160deg, rgba(74, 149, 182, .5) 68%, rgb(255, 255, 255) 68%,rgb(255, 255, 255) 70%, rgba(216, 205, 187, .5) 70%),
         url('../images/black-paper.png');
