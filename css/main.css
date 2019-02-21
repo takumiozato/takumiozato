@@ -20,7 +20,7 @@ body {
 
 .link-btn:hover {
     color: #fff;
-    background-color: #127c68;
+    background-color: #84a7b7;
 }
 
 /*ヘッダー*/
@@ -124,6 +124,7 @@ body {
     height: 100vh;
     background-color: #fff;
     z-index: 98;
+    background-image: url('../images/clean-textile.png');
 }
 
 .menu-list-inner {
@@ -193,7 +194,7 @@ body {
 /*セクション*/
 .section-inner {
     width: 80%;
-    min-width: 800px;
+    min-width: 700px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
