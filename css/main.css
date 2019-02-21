@@ -1,4 +1,8 @@
 /*共通*/
+body {
+    background-image: url(../images/clean-textile.png);
+}
+
 .btn-wrapper {
     padding: 50px 0;
     text-align: center;
@@ -39,7 +43,7 @@
 }
 
 .header-logo > a {
-    color: #127c68;
+    color: #000;
     text-decoration: none;
 }
 
@@ -74,7 +78,7 @@
 }
 
 .menu__line{
-    background: #127c68;
+    background: #353535;
     display: block;
     height: 2px;
     position: absolute;
@@ -150,24 +154,25 @@
 }
 
 /*メインビジュアル*/
+
+.main-visual-wrapper {
+    background: linear-gradient(125deg, rgba(74, 149, 182, .5) 68%, rgb(255, 255, 255) 68%,rgb(255, 255, 255) 70%, rgba(216, 205, 187, .5) 70%),
+    url('../images/black-paper.png');
+}
+
+.main-visual.top {
+    color: #fff;
+}
+
+.main-visual.top .lead {
+    color: #fff;
+}
+
 .main-visual-inner {
     display: table-cell;
     vertical-align: middle;
     position: relative;
 }
-
-/*.top.main-visual .main-visual-inner::after {
-    content: '';
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 260px;
-    left: 350px;
-    z-index: 0;
-    border-radius: 500px;
-    border: 1px dashed #0060ad;
-}*/
 
 .main-visual-inner > p {
     margin: 0;
@@ -195,11 +200,21 @@
 }
 
 .section-title {
-    color: #5a7d7c;
     font-size: 3rem;
-    font-weight: 500;
     text-align: center;
     margin: 0 0 80px 0;
+}
+
+.section-title::before {
+    content: '[';
+    padding: 0 20px;
+    color: #8a8a8a;
+}
+
+.section-title::after {
+    content: ']';
+    padding: 0 20px;
+    color: #8a8a8a;
 }
 
 .contents-title {
@@ -220,18 +235,8 @@
 }
 
 .section.skill {
-    background-color: #638096;
-    color: #fff;
-    transform: skewY(-6deg);
+    background-color: rgba(216, 205, 187, .5);
     margin: 100px 0;
-}
-
-.section.skill > .section-inner {
-    transform: skewY(7deg);
-}
-
-.section.skill .section-title {
-    color: #fff;
 }
 
 /*WORKS セクション*/
@@ -274,7 +279,6 @@
 
 .contents-header {
     font-size: 2.3rem;
-    font-weight: 500;
     margin: 0 0 30px 0;
 }
 
@@ -292,18 +296,8 @@
 }
 
 .section.policy {
-    background-color: #638096;
-    color: #fff;
-    transform: skewY(-6deg);
+    background-color: rgba(216, 205, 187, .5);
     margin: 100px 0;
-}
-
-.section.policy > .section-inner {
-    transform: skewY(7deg);
-}
-
-.section.policy .section-title {
-    color: #fff;
 }
 
 .policy-contents {
@@ -375,7 +369,8 @@
 /*フッター*/
 .footer {
     padding: 50px 0;
-    background-color: #638096;
+    background-color: rgba(74, 149, 182, .5);
+    background-image: url('../images/black-paper.png');
     color: #fff;
 }
 
@@ -480,6 +475,11 @@
 }
 
 @media ( max-width:468px ){
+    .main-visual-wrapper {
+        background: linear-gradient(160deg, rgba(74, 149, 182, .5) 68%, rgb(255, 255, 255) 68%,rgb(255, 255, 255) 70%, rgba(216, 205, 187, .5) 70%),
+        url('../images/black-paper.png');
+    }
+
     .btn-wrapper {
         padding: 10px 0;
     }
