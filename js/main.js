@@ -11,9 +11,10 @@ var headerComponent = {
 				<div class="menu-list" v-show="isActive">
 					<div class="menu-list-inner">
 						<ul>
+							<li><a href="/takumiozato/profile/">Top トップページ</a></li>
 							<li><a href="/takumiozato/profile/">Profile 私について</a></li>
 							<li><a href="/takumiozato/ability/">Ability できること</a></li>
-							<li><a href="/takumiozato/future/">Furture これからやりたいこと</a></li>
+							<li><a href="/takumiozato/future/">Furture やりたいこと</a></li>
 							<li><a href="/takumiozato/works/">Works 実績一覧</a></li>
 						</ul>
 					</div>
@@ -50,7 +51,7 @@ var footerComponent = {
 	template: `
 		<footer class="footer">
 			<div class="row footer-inner">
-				<div class="column one-half profile-wrapper">
+				<div class="profile-wrapper">
 					<div class="image-wrapper">
 						<img src="/takumiozato/images/profile.jpg" alt="大里　匠" class="profile-icon">
 					</div>
@@ -59,20 +60,12 @@ var footerComponent = {
 						<p>Web Developer</p>
 					</div>
 				</div>
-				<div class="column one-half row">
-					<div class="three columns">
-						<p><a href="/takumiozato/profile/" class="footer-link">profile</a></p>
-					</div>
-					<div class="three columns">
-						<p><a href="/takumiozato/profile/" class="footer-link">ability</a></p>
-						<ul>
-							<li>企画</li>
-							<li>制作</li>
-							<li>改善</li>
-						</ul>
-					</div>
-					<div class="three columns">
-						<p>WORKS</p>
+				<div class="link-wrapper">
+					<div class="row">
+						<p class="columns three"><a href="/takumiozato/" class="footer-link">Top -トップ-</a></p>
+						<p class="columns three"><a href="/takumiozato/profile/" class="footer-link">Profile -私について-</a></p>
+						<p class="columns three"><a href="/takumiozato/ability/" class="footer-link">Ability -できること-</a></p>
+						<p class="columns three"><a href="/takumiozato/future/" class="footer-link">Future -やりたいこと-</a></p>
 					</div>
 				</div>
 			</div>
