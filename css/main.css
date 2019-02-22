@@ -441,7 +441,7 @@ body {
 }
 
 .fadeIn-enter-active {
-    transition: 1s ease .1s;
+    transition: 1s ease .3s;
 }
 
 .fadeIn-enter {
