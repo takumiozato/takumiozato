@@ -1,7 +1,7 @@
 var headerComponent = {
 	template: `
 		<header class="header-area">
-			<h1 class="header-logo"><a href="/takumiozato/"><img src="images/favicon.png" alt="" /></a></h1>
+			<h1 class="header-logo"><a href="/takumiozato/">Ozato Takumi</a></h1>
 			<a class="menu-btn" :class="{ 'active': isActive }" @click="menuActive">
 				<span class="menu__line menu__line--top"></span>
 				<span class="menu__line menu__line--center"></span>
