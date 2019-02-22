@@ -367,13 +367,13 @@ body {
     width: 30%;
 }
 
-.future-image-wrapper {
-    width: 50%;
-    margin: 0 auto;
+.result-contents {
+    margin: 0 0 80px 0;
 }
 
-.future-image-wrapper img {
-    width: 100%;
+.result-contents .contents-header {
+    padding: 0 0 0 10px;
+    border-left: 2px solid #d8054d;
 }
 
 /*フッター*/
