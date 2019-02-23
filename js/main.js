@@ -15,7 +15,6 @@ var headerComponent = {
 							<li><a href="/takumiozato/profile/">Profile 私について</a></li>
 							<li><a href="/takumiozato/ability/">Ability できること</a></li>
 							<li><a href="/takumiozato/future/">Furture やりたいこと</a></li>
-							<li><a href="/takumiozato/works/">Works 実績一覧</a></li>
 						</ul>
 					</div>
 				</div>
