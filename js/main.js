@@ -11,7 +11,7 @@ var headerComponent = {
 				<div class="menu-list" v-show="isActive">
 					<div class="menu-list-inner">
 						<ul>
-							<li><a href="/takumiozato/profile/">Top トップページ</a></li>
+							<li><a href="/takumiozato/">Top トップページ</a></li>
 							<li><a href="/takumiozato/profile/">Profile 私について</a></li>
 							<li><a href="/takumiozato/ability/">Ability できること</a></li>
 							<li><a href="/takumiozato/future/">Furture やりたいこと</a></li>
